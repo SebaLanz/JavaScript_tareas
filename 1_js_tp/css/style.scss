@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+//Variables.
+$btn_borde:solid black 1px;
+$btn_color:#dfdfdf ;
+$btn_width: 150px;
+$color_texto: #000000;
+$btn_color_texto: #000000;
+
+
+//Variables Espacios
+$padding_h3:15px;
+$padding_bot_texto:10px;
+
+
+//Variable letras
+$font_family:Verdana, Geneva, Tahoma, sans-serif;
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #aa9696;
+}
+form {
+    width: 300px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //Generador de clave
+    h3{
+        color: $color_texto;
+        padding-bottom: $padding_h3;
+    }
+
+    //div -> label
+    div label{
+        color: $color_texto;
+        font-family: $font_family;
+        padding-bottom: $padding_bot_texto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    //btn-generar
+    button{
+        background-color: $btn_color !important;
+        border: $btn_borde !important;
+        width: $btn_width;
+        color: $btn_color_texto !important;
+        transition: 0.7s;
+    }
+    button:hover{
+        background-color: #000000 !important;
+        transition: 0.7s;
+        color: white !important;
+    }
+}
+
+
